@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+
+        <script src="https://yastatic.net/jquery/1.12.0/jquery.min.js"></script>
+
+        <script src="js/questions.js"></script>
+        <script src="js/password.js"></script>
+        <script src="js/page.js"></script>
+
+        <!--[if lt IE 10]>
+           <script src="ie/jquery.placeholder.min.js"></script>
+           <script src="ie/ie.js"></script>
+           <link rel="stylesheet" href="ie/ie.css"/>
+       <![endif]-->
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="text-center">Генератор паролей</h1>
+                        <h2 class="text-center">Легко запомнить, невозможно взломать</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="text-center text-large">Чтобы придумать пароль, ответьте на несколько простых вопросов:</p>
+                </div>
+
+                <div class="col-sm-6 col-sm-offset-3">
+                    <form id="questions">                        
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"></span>
+                                <input type="text" class="form-control"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default refresh" type="button"><span class="glyphicon glyphicon-refresh" aria-hidden="true" title="Другой вопрос"></span></button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="block-password" class="col-xs-12 text-center dn">
+                    <p>Мы придумали для Вас надёжный пароль:</p>
+                    <p id="password"></p>
+                    <p>Чтобы его запомнить, попробуйте ввести несколько раз.</p>
+                    <button class="btn btn-info" id="btn-check">Ввести пароль</button>
+                </div>
+
+                <div class="col-sm-4 col-sm-offset-4">
+                    <form id="password-confirm">
+                        <div class="form-group confirm-password-div dn">
+                            <div class="input-group">
+                                <span class="input-group-addon index">1.</span>
+                                <input type="password" class="form-control password"/>
+                                <div class="input-group-addon count-symbols"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xs-12 dn" id="profit">
+                    <p class="text-center">Поздравляем! Вы запомнили свой пароль.</p>
+                    <button class="btn btn-info center-block" id="gen-new-pass">Придумать новый</button>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        &copy; 2016 &ndash; Ivan Trofimov
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
