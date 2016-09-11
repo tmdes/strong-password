@@ -2,3 +2,5 @@
 JavaScript приложение для генерации паролей.
 
 DEMO: https://htmlpreview.github.io/?https://github.com/trofivan/strong-password/blob/master/index.html
+
+![alt tag](https://raw.githubusercontent.com/trofivan/strong-password/master/img/promo.png)
